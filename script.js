@@ -1,3 +1,4 @@
+
 let Name = document.getElementById("Name");
 let FName = document.getElementById("FName");
 let ID = document.getElementById("Id");
@@ -14,6 +15,8 @@ table.appendChild(thead);
 table.appendChild(tbody);
 
 
+
+
 document.getElementById('body').appendChild(table);
 
 
@@ -27,7 +30,7 @@ heading_3.innerHTML = "FatherName";
 let heading_4 = document.createElement('th');
 heading_4.innerHTML = "ID";
 let heading_5 = document.createElement('th');
-heading_4.innerHTML = "CNIC";
+heading_5.innerHTML = "CNIC";
 
 row_1.appendChild(heading_1);
 row_1.appendChild(heading_2);
@@ -39,7 +42,7 @@ thead.appendChild(row_1);
 
 let row_2 = document.createElement('tr');
 let row_2_data_1 = document.createElement('td');
-row_2_data_1.innerHTML =  Math.random();
+row_2_data_1.innerHTML =  Math.floor(Math.random() * 11);
 let row_2_data_2 = document.createElement('td');
 row_2_data_2.innerText = Name.value;
 let row_2_data_3 = document.createElement('td');
