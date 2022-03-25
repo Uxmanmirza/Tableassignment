@@ -4,7 +4,7 @@ let ID = document.getElementById("Id");
 let CNIC = document.getElementById("Cnic");
 let Btn = document.getElementById("btn");
 
-Btn.onclick = ()=>
+Btn.onclick = () =>
     {
         let table = document.createElement('table');
 let thead = document.createElement('thead');
@@ -33,26 +33,31 @@ row_1.appendChild(heading_1);
 row_1.appendChild(heading_2);
 row_1.appendChild(heading_3);
 row_1.appendChild(heading_4);
+row_1.appendChild(heading_5);
 thead.appendChild(row_1);
 
 
 let row_2 = document.createElement('tr');
 let row_2_data_1 = document.createElement('td');
-row_2_data_1.innerHTML = "1.";
+row_2_data_1.innerHTML =  Math.random();
 let row_2_data_2 = document.createElement('td');
 row_2_data_2.innerText = Name.value;
 let row_2_data_3 = document.createElement('td');
 row_2_data_3.innerText = FName.value;
 let row_2_data_4 = document.createElement('td');
 row_2_data_4.innerText = ID.value;
+let row_2_data_5 = document.createElement('td');
+row_2_data_5.innerText = CNIC.value;
 
 row_2.appendChild(row_2_data_1);
 row_2.appendChild(row_2_data_2);
 row_2.appendChild(row_2_data_3);
 row_2.appendChild(row_2_data_4);
+row_2.appendChild(row_2_data_5);
 tbody.appendChild(row_2);
 
-    };
+
+};
     
 
 console.log("Ali");
