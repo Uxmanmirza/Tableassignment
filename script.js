@@ -63,4 +63,3 @@ tbody.appendChild(row_2);
 };
     
 
-console.log("Ali");
